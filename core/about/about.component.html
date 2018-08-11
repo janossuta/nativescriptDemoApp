@@ -1,0 +1,11 @@
+<ActionBar class="action-bar" style="background-color: brown">
+    <Label class="action-bar-title" text="DemoApp" style="color: white;"></Label>
+</ActionBar>
+
+<StackLayout>
+    <Label textWrap="true" class="body m-20" text="About page."></Label>
+    
+	<Button class="btn btn-primary" text="photo" (tap)="takeApicture()" ></Button>
+    <Image [src]="source"></Image>
+    <Button class="btn btn-primary" text="getData" (tap)="getData()" ></Button>
+</StackLayout>
